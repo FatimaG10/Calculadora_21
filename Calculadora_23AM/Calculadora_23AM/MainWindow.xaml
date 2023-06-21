@@ -1,0 +1,60 @@
+﻿<Window x:Class="Calculadora_23AM.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Calculadora_23AM"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="386" Width="291">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="BorderBrush" Value="#FFF8F9FB"/>
+            <Setter Property="Background" Value="#FF3C30CE" />
+            <EventSetter Event="Click" Handler="ButtonClick"/>
+            <Setter Property="FontFamily" Value="Arial Black"  />
+        </Style>
+
+    </Window.Resources>
+    <Grid Margin="0,0,-2,0" Background="#FF190D6B">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="373*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+
+
+        <Button 
+            x:Name="BtSiete"
+            Content="7" 
+            HorizontalAlignment="Left" 
+            Height="50" 
+            Margin="29,99,0,0" 
+            VerticalAlignment="Top" 
+            Width="49" 
+            Foreground="White" 
+            FontWeight="Bold" 
+            FontSize="16" 
+            />
+
+        <Button x:Name="BtOcho" Content="8" HorizontalAlignment="Left" Height="49" Margin="89,99,0,0" VerticalAlignment="Top" Width="49"  Foreground="White" FontWeight="Bold" FontSize="16" />
+        <Button x:Name="BtNueve" Content="9" HorizontalAlignment="Left" Height="49" Margin="150,99,0,0" VerticalAlignment="Top" Width="49" Foreground="White" FontWeight="Bold" FontSize="16" />
+        <Button x:Name="BtBorrar" Content="C" HorizontalAlignment="Left" Height="49" Margin="212,99,0,0" VerticalAlignment="Top" Width="49" Foreground="White" FontWeight="Bold" FontSize="16"  Background="#FF190BC5" />
+        <Button x:Name="BtCuatro" Content="4" HorizontalAlignment="Left" Height="49" Margin="29,163,0,0" VerticalAlignment="Top" Width="49" Foreground="White" FontWeight="Bold" FontSize="16" />
+        <Button x:Name="BtCinco" Content="5" HorizontalAlignment="Left" Height="49" Margin="89,163,0,0" VerticalAlignment="Top" Width="49" Foreground="White" FontWeight="Bold" FontSize="16" />
+        <Button x:Name="BtSeis" Content="6" HorizontalAlignment="Left" Height="49" Margin="150,163,0,0" VerticalAlignment="Top" Width="49" Foreground="White" FontWeight="Bold" FontSize="16" />
+        <Button x:Name="BtSuma" Content="+" HorizontalAlignment="Left" Height="49" Margin="212,163,0,0" VerticalAlignment="Top" Width="49" Foreground="White" FontWeight="Bold" FontSize="16" Background="#FF190BC5" />
+        <Button x:Name="BtUno" Content="1" HorizontalAlignment="Left" Height="49" Margin="29,226,0,0" VerticalAlignment="Top" Width="49" Foreground="White" FontWeight="Bold" FontSize="16" />
+        <Button x:Name="BtDos" Content="2" HorizontalAlignment="Left" Height="49" Margin="89,226,0,0" VerticalAlignment="Top" Width="49"  Foreground="White" FontWeight="Bold" FontSize="16" />
+        <Button x:Name="BtTres" Content="3" HorizontalAlignment="Left" Height="49" Margin="150,226,0,0" VerticalAlignment="Top" Width="49" Foreground="White" FontWeight="Bold" FontSize="16" />
+        <Button x:Name="BtResta" Content="-" HorizontalAlignment="Left" Height="49" Margin="212,226,0,0" VerticalAlignment="Top" Width="49" Foreground="White" FontWeight="Bold" FontSize="16" Background="#FF190BC5" />
+        <Button x:Name="BtCero" Content="0" HorizontalAlignment="Left" Height="49" Margin="29,290,0,0" VerticalAlignment="Top" Width="49" Foreground="White" FontWeight="Bold" FontSize="16" />
+        <Button x:Name="BtIgual" Content="=" HorizontalAlignment="Left" Height="49" Margin="89,290,0,0" VerticalAlignment="Top" Width="49" Foreground="White" FontWeight="Bold" FontSize="16" Background="#FF190BC5" />
+        <Button x:Name="BtMulti" Content="*" HorizontalAlignment="Left" Height="49" Margin="150,290,0,0" VerticalAlignment="Top" Width="49" Foreground="White" FontWeight="Bold" FontSize="16" Background="#FF190BC5" />
+        <Button x:Name="BtDiv" Content="/" HorizontalAlignment="Left" Height="49" Margin="212,290,0,0" VerticalAlignment="Top" Width="49"  Foreground="White" FontWeight="Bold" FontSize="16" Background="#FF190BC5" />
+        <TextBox x:Name="Screen" HorizontalAlignment="Left" Height="49" Margin="32,23,0,0"  TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="229" Foreground="#FFFBFBFB" OpacityMask="#FF163080" TextAlignment="Right" FontSize="16"  Background="#FF3C3992" IsEnabled="False">
+
+        </TextBox>
+
+
+    </Grid>
+</Window>
